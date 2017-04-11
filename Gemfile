@@ -14,7 +14,7 @@ gem 'sqlite3'
 gem 'puma', '~> 3.7'
 
 gem 'jwt'
-
+gem 'active_model_serializers', '~> 0.10.0'
 
 gem 'bcrypt', '~> 3.1.7'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
