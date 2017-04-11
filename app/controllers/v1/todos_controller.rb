@@ -1,3 +1,4 @@
+module V1
 class TodosController < ApplicationController
     before_action :set_todo, only: [:show, :update, :destroy]
 
@@ -31,7 +32,8 @@ class TodosController < ApplicationController
     end
 
 
-    private
+  private
+
   def todo_params
     params.permit(:title)
   end 
@@ -39,4 +41,6 @@ class TodosController < ApplicationController
   def set_todo
     @todo = Todo.find(params[:id])
   end
+ end
+
 end
